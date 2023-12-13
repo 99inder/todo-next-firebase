@@ -38,7 +38,7 @@ const TodoList = () => {
   }, [user]);
 
   const handleTodoDelete = async (id) => {
-    if (confirm("Are you sure you wanna delete this todo?")) {
+    if (confirm("Are you sure you want to delete this todo?")) {
       deleteTodo(id);
       toast({ title: "Todo deleted successfully", status: "success" });
     }
@@ -54,7 +54,7 @@ const TodoList = () => {
   };
 
   return (
-    <Box mt={5}>
+    <Box mt={5} px={"20px"}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8}>
         {todos &&
           todos.map((todo) => (

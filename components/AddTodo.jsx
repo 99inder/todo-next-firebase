@@ -48,7 +48,7 @@ const AddTodo = () => {
   };
 
   return (
-    <Box w="40%" margin={"0 auto"} display="block" mt={5}>
+    <Box w={{ base: "full", lg: "40%" }} px={{base: "20px", lg: "0"}} margin={"0 auto"} display="block" mt={5}>
       <Stack direction="column">
         <Input
           placeholder="Title"
